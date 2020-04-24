@@ -1,0 +1,112 @@
+body{
+    background-color: rgb(17, 0, 0);
+
+}
+div{
+transform: scale(var(--v)) ;
+}
+.all_swing{
+    background-color: tomato;
+}
+
+.swing {
+    width:150px;
+    height:100px;
+    background-color: transparent;
+    border: 1px solid rgb(255, 0, 179);
+    border-radius:50%;
+    
+    text-align: center;   
+    margin-left:auto;
+    top:70%;
+    position: absolute;
+    margin-right:auto;
+    animation-timing-function: ease-out-in;
+    animation-name:moving;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+    animation-delay: calc(.9s * var(--v)) ;
+    left:20%;
+    right:20%;
+}
+@keyframes moving {
+    
+    0%{
+        top:70%;
+    }
+    50%{
+        top:2%;
+        border:10px solid rgb(128, 0, 0);
+    }
+    100%{
+        top:70%;
+    }
+}
+.swing:nth-child(1){
+    transform:rotateX(70deg) scale(0.3);
+    
+}
+.swing:nth-child(2){
+    transform:rotateX(70deg) scale(0.4);
+    
+}
+.swing:nth-child(3){
+    transform:rotateX(70deg) scale(0.5);
+
+}
+.swing:nth-child(4){
+    transform:rotateX(70deg) scale(0.6);
+}
+.swing:nth-child(5){
+    transform:rotateX(70deg) scale(0.7);
+}
+.swing:nth-child(6){
+    transform:rotateX(70deg) scale(0.8);
+}
+.swing:nth-child(7){
+    transform:rotateX(70deg) scale(0.9);
+}
+.swing:nth-child(8){
+    transform:rotateX(70deg) scale(1.0);
+}
+.swing:nth-child(9){
+    transform:rotateX(70deg) scale(1.1);
+}
+.swing:nth-child(10){
+    transform:rotateX(70deg) scale(1.2);
+}
+.swing:nth-child(11){
+    transform:rotateX(70deg) scale(1.3);
+}
+.swing:nth-child(12){
+    transform:rotateX(70deg) scale(1.4);
+}
+.swing:nth-child(13){
+    transform:rotateX(70deg) scale(1.5);
+}
+
+.swing:nth-child(14){
+    transform:rotateX(70deg) scale(1.6);
+}
+
+.swing:nth-child(15){
+    transform:rotateX(70deg) scale(1.7);
+}
+
+.swing:nth-child(16){
+    transform:rotateX(70deg) scale(1.8);
+}
+
+.swing:nth-child(17){
+    transform:rotateX(70deg) scale(1.9);
+}
+
+.swing:nth-child(18){
+    transform:rotateX(70deg) scale(2.0);
+}
+@media (max-width:800px){
+    .swing{width:100px;
+    height:70px}
+}
+
+
